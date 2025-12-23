@@ -1,0 +1,405 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HBO</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white md-me-auto">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="https://www.hbo.com/">
+        <img src="https://www.hbo.com/img/hbo-logo-blk.svg" alt="logo" height="28">
+        </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item me-2">
+          <a class="nav-link " aria-current="page" href="https://www.hbo.com/series">SERIES</a>
+        </li>
+        <li class="nav-item me-2">
+          <a class="nav-link" href="https://www.hbo.com/movies">MOVIES</a>
+        </li>
+        <li class="nav-item me-2">
+            <a class="nav-link" href="https://www.hbo.com/whats-new-whats-leaving">NEWS & LAST CHANCE</a>
+        </li>
+        <li class="nav-item me-2">
+            <a class="nav-link" href="https://www.hbo.com/schedule">SCHEDULE</a>
+        </li>
+        <li class="nav-item me-2">
+            <a class="nav-link" href="https://www.hbo.com/watch-free-episodes">FREE EPISODES</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            MORE
+          </a>
+          <ul class="dropdown-menu p-4">
+            <li><a class="dropdown-item" href="https://www.hbo.com/documentaries">DOCUMENTARIES</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="https://www.hbo.com/specials">SPECIALS</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="https://www.hbo.com/sports">SPORTS</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="https://www.hbo.com/podcasts">PODCAST</a></li>
+
+          </ul>
+        </li>
+      </ul>
+      <div class="d-flex align-items-center gap-2 ">
+        <a id="new" href="https://auth.hbomax.com/login?hbo_campaign=max_button_&hbo_medium=referral&hbo_term=nav&hbo_source=hbo.com" class="text-decoration-none text-dark ">
+            SIGN IN
+        </a>
+        <button class="btn btn-dark d-flex align-items-center gap-2 "
+            onclick="window.location.href='https://auth.hbomax.com/login'">
+            SIGN UP FOR
+
+            <img src="https://static.hbo.com/2025-06/hbomax-logo-iridescent-white.png"
+            alt="hbo-max logo" width="30" height="20">
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="img-container">
+  <a href="https://www.hbo.com/content/it-welcome-to-derry" target="_blank">
+    <img src="https://static.hbo.com/2025-09/it-welcome-to-derry-pennywise-ka-2000x700.jpg?w=1200">
+  </a>
+  <div class="overlay-text">
+    <h4 id="show">NOW STREAMING</h4>
+    <h1 id="head">IT: Welcome to Derry</h1>
+    <p class="para">Set in the universe of Stephen King’s “IT,” the new horror-drama series is based on King's novel IT and expands the vision established by filmmaker Andy Muschietti in the feature films IT and IT Chapter Two</p>
+    <button class="btn btn-custom mt-3 me-4" data-bs-toggle="modal" data-bs-target="#videoModal">
+      <i class="fa-solid fa-play"></i>
+      WATCH THE TRAILER
+    </button>
+    <button class="btn btn-custom mt-3"
+    onclick="window.location.href='https://www.hbo.com/content/it-welcome-to-derry'">
+    FIND OUT MORE
+  </button>
+  </div>
+
+</div>
+<div class="modal fade" id="videoModal" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content bg-black">
+      <div class="modal-body p-0 position-relative">
+        <!-- Close button -->
+        <button type="button" 
+                class="btn-close btn-close-white position-absolute top-0 end-0 m-3" 
+                data-bs-dismiss="modal"></button>
+
+        <!-- Video -->
+        <iframe
+          id="trailerVideo"
+          width="100%"
+          height="400"
+          frameborder="0"
+          allow="autoplay; encrypted-media; picture-in-picture"
+          src="https://www.youtube.com/embed/6HG-wsRsg8s"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </div>
+</div>
+<div>
+  <div class="sub-head">
+    <h1>Stream the Latest</h1>
+  </div>
+</div>
+<div class="slider_container">
+  <div class="img-1-row d-flex"></div>
+</div>
+<div class="slider_container">
+<div class="img1-container card-2">
+  <a href="https://www.hbo.com/content/movies/music-box-counting-crows-have-you-seen-me-lately"
+  target="_blank" class="card1">
+  <img src="https://static.hbo.com/2025-12/counting-crows-have-you-seen-me-lately-ka-1920.jpg"
+  class="card-img">
+
+  <div class="card-body">
+    <p class="card-tag">AVAILABLE NOW</p>
+    <h5 class="card-title">
+      Music Box: Counting Crows: Have<br> You Seen Me Lately? 
+    </h5>
+    <p class="card-text">
+      An intimate portrait of the Counting Crows — the band's meteoric rise and the unrelenting pressure that followed their breakout success. 
+    </p>
+  </div>
+</a>
+</div>
+
+<div class="img1-container card-2">
+  <a href="https://www.hbo.com/content/movies/sarah-squirm-live-in-the-flesh"
+  target="_blank" class="card1">
+  <img src="https://images.cdn.prd.api.discomax.com/zW6o3/cmslSJTqoNi9Ks04w.jpeg?f=jpg&q=75&w=1280&w=1200"
+  class="card-img">
+
+<div class="card-body">
+  <p class="card-tag">AVAILABLE NOW</p>
+  <h5 class="card-title">
+    Sarah Squirm: Live + In the Flesh
+  </h5>
+  <p class="card-text">
+    Sarah Sherman slithers onto screens in her first HBO stand-up special for an hour of jokes, open-wound confessionals…and bodily fluids.
+  </p>
+</div>  
+</a>
+</div>
+
+<div class="img1-container card-2">
+  <a href="https://www.hbo.com/content/movies/music-box-wizkid-long-live-lagos"
+  target="_blank" class="card1">
+  <img src="https://static.hbo.com/2025-10/music-box-wizkid-long-live-lagos-ka-1920.jpg"
+  class="card-img">
+
+ <div class="card-body">
+  <p class="card-tag">AVAILABLE NOW</p>
+  <h5 class="card-title">
+    Music Box: Wizkid: Long Live Lagos
+  </h5>
+ <p class="card-text">
+  A look at the journey of Nigerian musician Wizkid as he prepares for a historic performance at Tottenham Hotspur Stadium in London.
+ </p>
+</div> 
+</a>
+</div>
+
+<div class="img1-container card-2">
+  <a href="https://www.hbo.com/content/movies/music-box-its-never-over-jeff-buckley"
+  target="_blank" class="card1">
+  <img src="https://static.hbo.com/2025-11/its-never-over-jeff-buckley-ka-1920.jpg"
+  class="card-img">
+
+  <div class="card-body">
+    <p class="card-tag">AVAILABLE NOW</p>
+    <h5 class="card-title">
+      Music Box: It’s Never Over, Jeff Buckley 
+    </h5>
+    <p class="card-text">
+      A look at the life of musician Jeff Buckley, a rising young star with an otherworldly voice who died suddenly in 1997 at the age of 30. 
+    </p>
+  </div>
+</a>
+</div>
+
+<div class="img-container card-2">
+  <a href="https://www.hbo.com/content/hard-knocks-in-season-with-the-nfc-east"
+  target="_blank" class="card1">
+  <img src="https://static.hbo.com/2025-11/hard-knocks-in-season-with-the-nfc-east-ka-1920.jpg"
+  class="card-img">
+
+  <div class="card-body">
+    <p class="card-tag">AVAILABLE NOW</p>
+    <h5 class="card-title">
+      Hard Knocks: In Season with the NFC East 
+    </h5>
+    <p class="card-text">
+      An all-access look at the Eagles, Cowboys, Giants, and Commanders during the final stretch of the 2025 NFL season. 
+    </p>
+  </div>
+</a>
+</div>
+
+<div class="img-container card-2">
+  <a href="https://www.hbo.com/content/movies/paul-anka-his-way"
+  target="_blank" class="card1">
+  <img src="https://static.hbo.com/2025-11/paul-anka-his-way-ka-1920.jpg"
+  class="card-img">
+
+  <div class="card-body">
+    <p class="card-tag">AVAILABLE NOW</p>
+    <h5 class="card-title">
+      Paul Anka: His Way
+    </h5>
+    <p class="card-text">
+      A look at the life of songwriter Paul Anka, tracing his seven-decade career and enduring legacy as one of the most prolific musicians in the world. 
+    </p>
+  </div>
+</a>
+</div>
+
+<div class="img-container card-2">
+  <a href="https://www.hbo.com/content/its-florida-man"
+  target="_blank" class="card1">
+  <img src="https://static.hbo.com/2025-10/its-florida-man-s2-ka-1920.jpg"
+  class="card-img">
+
+  <div class="card-body">
+    <p class="card-tag">AVAILABLE NOW</p>
+    <h5 class="card-title">
+      It's Florida, Man.
+    </h5>
+    <p class="card-text">
+      This irreverent comedy series features the strangest tales of the Sunshine State — playfully recreated by a rotating cast of actors and comedians. 
+    </p>
+  </div>
+</a>
+</div>
+
+<div class="img-container card-2">
+  <a href="https://www.hbo.com/content/movies/the-shuffle"
+  target="_blank" class="card1">
+  <img src="https://static.hbo.com/2025-11/the-shuffle-ka-1920_1.jpg"
+  class="card-img">
+
+  <div class="card-body">
+    <p class="card-tag">AVAILABLE NOW</p>
+    <h5 class="card-title">
+      The Shuffle
+    </h5>
+    <p class="card-text">
+      The documentary short film chronicles the making of the iconic music video for “The Super Bowl Shuffle,” performed by the 1985 Chicago Bears. 
+    </p>
+  </div>
+</a>
+</div>
+
+<div class="img-container card-2">
+  <a href="https://www.hbo.com/content/i-love-la"
+  target="_blank" class="card1">
+  <img src="https://static.hbo.com/2025-10/i-love-la-ka-1920_0.jpg"
+  class="card-img">
+
+  <div class="card-body">
+    <p class="card-tag">AVAILABLE NOW</p>
+    <h5 class="card-title">
+      I Love LA
+    </h5>
+    <p class="card-text">
+      In this new comedy series created by and starring Rachel Sennott, the life of an assistant living in LA is upended when her influencer best friend returns, sparking chaos in their codependent friend group. 
+    </p>
+  </div>
+</a>
+</div>
+</div>
+
+<div>
+  <div class="shows d-flex justify-content-between align-items-center">
+    <p class="me-3">Tonight on HBO</p>
+    <a href="https://www.hbo.com/schedule" class="schedule">SEE FULL SCHEDULE <i class="fa-regular fa-angle-right"></i></a>
+  </div>
+  <hr class="line">
+</div>
+
+<div class="shows-container d-flex"> 
+  <div class="schedule-card">
+    <p class="show-title">
+      <a href="https://www.hbo.com/schedule?showId=urn:hbo-east:826249:282187-003-816-1766365320">I Love LA - S1:E3 - Girl's Girl</a>
+    </p>
+    <p class="show-time">8:02 PM EST</p>
+  </div>
+
+  <div class="schedule-card">
+    <p class="show-title">
+      <a href="https://www.hbo.com/schedule?showId=urn:hbo-east:826250:282187-004-816-1766367120">I Love LA - S1:E4 - Upstairses</a>
+    </p>
+    <p class="show-time">8:32 PM EST</p>
+  </div>
+  <div class="schedule-card">
+    <p class="show-title">
+      <a href="https://www.hbo.com/schedule?showId=urn:hbo-east:826251:282187-005-816-1766368860">I Love LA - S1:E5 - They Can't All Be Jeremys</a>
+    </p>
+    <p class="show-time">9:01 PM EST</p>
+  </div>
+</div>
+
+<div class="hero-row">
+  <div class="new-card">
+    <img class="img-1" src="https://static.hbo.com/2024-07/house-of-the-dragon-mid-season-2.jpg">
+  </div>
+
+  <div class="card-2">
+    <img class="img-2" src="https://static.hbo.com/2025-05/the-sopranos-2x3.jpg">
+  </div>
+  <div class="card-3">
+    <img class="img-3" src="https://static.hbo.com/2024-03/TheLastofUs_2560x3840-c.jpg">
+  </div>
+  <div class="card-4">
+    <img class="img-4" src="https://static.hbo.com/2025-06/hbomax-logo-iridescent-white.png">
+    <p class="para-1">Must-See Series, Movies </p>
+    <p class="para-2">& More</p>
+        <a href="https://auth.hbomax.com/product?hbo_campaign=max_button_&hbo_medium=referral&hbo_term=acquisition_banner&hbo_source=hbo.com"
+          class="btn-2">
+      SIGN UP NOW
+    </a>
+  </div>
+</div>
+<div>
+  <div class="sub-2" >
+    <h2 id="sub-3" style="color: rgb(19, 18, 18); font-weight: 700; text-align: center;">Coming Soon to HBO</h2>
+  </div>
+</div>
+<div>
+  <div class="img2-2 card-2">
+    <a href="https://www.hbo.com/content/a-knight-of-the-seven-kingdoms"
+    target="_blank" class="card5">
+    <img src="https://static.hbo.com/2025-10/akotsk-s1-version-A-ka-1920.jpg"
+    class="card-img2">
+    
+    <div class="card2-body">
+      <p class="card-tag1">PREMIERES JANUARY 18 AT 10 PM</p>
+      <h5 class="card-title1">
+        A Knight of the Seven Kingdoms
+      </h5>
+      <p class="card-text1">
+        A century before the events of Game of Thrones, two unlikely heroes wandered Westeros — a naïve but brave knight, Ser Duncan the Tall, and his diminutive squire, Egg — in the HBO series adapted from George R. R. Martin's novella.
+      </p>
+    </div>
+  </a>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<footer>
+  <div class="footer-wrap">
+    <img id="foot" src="https://static.hbo.com/2024-10/241101-max-brand-quilt-cropped.jpg">
+    <div class="foot-logo">
+      <img id="foot-logo1" src="https://static.hbo.com/2025-06/hbomax-logo-iridescent-white.png">
+      <p class="plan">Plans start at $10.99/month</p>
+      <a class="foot-btn"
+        href="https://auth.hbomax.com/product?hbo_campaign=max_button_&hbo_medium=referral&hbo_term=footer_banner&hbo_source=hbo.com">
+        SIGN UP NOW
+      </a>  
+    </div>
+  </div>
+  <div class="footer-last">
+    <img class="foot-logo2" src="https://www.hbo.com/img/hbo-logo-footer.svg">
+    <div class="edit">
+    <a class="btn btn-link" href="https://www.hbo.com/about">ABOUT</a>  
+    <a class="btn btn-link" href="https://www.hbo.com/hbo-and-hbo-max/how-to-get">GET HBO</a>  
+    <a class="btn btn-link" href="https://www.hbo.com/about/faqs">HELP</a>  
+    <a class="btn btn-link" href="https://shop.hbo.com">SHOP</a>  
+    <a class="btn btn-link" href="https://careers.wbd.com/global/en">CAREERS</a>  
+    <a class="btn btn-link" href="https://www.hbo.com/about/hbo-inspires">HBO INSPIRES</a>    
+  </div>
+
+  <div class="edit-2">
+    <a class="btn btn-link-2" href="https://www.wbdprivacy.com/policycenter/b2c/">Privacy Policy</a>  
+    <a class="btn btn-link-2" href="https://www.hbo.com/terms-of-use">Terms of Use</a>  
+    <a class="btn btn-link-2" href="https://www.wbdprivacy.com/policycenter/b2c/">Ad Choices</a>  
+    <a class="btn btn-link-2" href="https://www.wbdprivacy.com/policycenter/b2c/">Cookie Settings</a>  
+  </div>
+  <div class="edit-3">
+    <p>© 2025 Home Box Office, Inc. All Rights Reserved. 
+    <br>
+     This website may contain mature content.
+    </p>
+  </div>
+  </div>
+  </footer>
+</body>
+</html>
+
+
+
+
+
